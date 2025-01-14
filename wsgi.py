@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hellow_world():
-  return render_template("index.html")
+  return 'Home page'
 
 
 @app.route('/personal_website')
 def personal_website():
-  return render_template("Personal_Site.html")
+  return render_template("index.html")
 
 
 if __name__ == ('__main__'):
